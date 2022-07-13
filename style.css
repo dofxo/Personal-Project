@@ -51,6 +51,7 @@
 }
 
 .headerLinks li {
+    cursor: pointer;
     position: relative;
     list-style-type: none;
     margin: 0;
@@ -68,9 +69,18 @@
 
 }
 
-.headerLinks .content {
-    position: relative;
+.headerLinks .dropDown::after {
+    content: '';
+    position: absolute;
+    bottom: 40%;
+    width: 3px;
+    height: 3px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transform: rotate(45deg);
+    margin-left: 10px;
 }
+
 
 .headerLinks .content ul {
     position: absolute;
@@ -80,8 +90,6 @@
     width: 200px;
     padding: 10px 0;
     display: none;
-    z-index: -1;
-
 
 }
 
@@ -92,13 +100,10 @@
     width: 200px;
     padding: 10px 0;
     display: none;
-    z-index: -1;
+
 
 
 }
-
-
-
 
 .headerLinks .content ul li a {
 
@@ -118,20 +123,10 @@
 
 
 
-.headerLinks .dropDown::after {
-    content: '';
-    position: absolute;
-    bottom: 40%;
-    width: 3px;
-    height: 3px;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    transform: rotate(45deg);
-    margin-left: 10px;
-}
 
 
-.headerLinks a:hover {
+
+.headerLinks li:hover>a {
     color: #8490ff;
     transform: all 0.3s linear;
 }
