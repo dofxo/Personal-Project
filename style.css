@@ -59,10 +59,10 @@
 
 .headerLinks>ul>li a {
 
-    font-size: 13px;
+    font-size: 14px;
     text-decoration: none;
     color: black;
-    padding-bottom: 20px;
+    padding: 0 5px 20px 5px;
 
 }
 
@@ -130,17 +130,13 @@
     transform: all 0.3s linear;
 }
 
-.headerLinks>ul>li:hover>ul {
-    display: block;
-    transition: all 0.3s linear;
-
-}
-
+.headerLinks>ul>li:hover>ul,
 .headerLinks>ul>li>ul>li:hover>ul {
     display: block;
-    transition: all 0.3s linear;
+
 
 }
+
 
 /* main row 1 */
 
