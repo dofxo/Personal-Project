@@ -80,7 +80,7 @@
 }
 
 
-.headerLinks .content ul {
+.headerLinks>ul>li>ul {
     position: absolute;
     top: 150%;
     right: 0;
@@ -91,19 +91,20 @@
 
 }
 
-.headerLinks .content2 ul {
+.headerLinks>ul>li>ul>li>ul {
     position: absolute;
     top: 50%;
     right: 100%;
     width: 200px;
     padding: 10px 0;
     display: none;
+    background-color: #fff;
 
 
 
 }
 
-.headerLinks .content ul li a {
+.headerLinks>ul>li>ul>li>a {
 
     margin: 0;
     padding-left: 10px;
@@ -129,13 +130,13 @@
     transform: all 0.3s linear;
 }
 
-.newMenu:hover .content>ul {
+.headerLinks>ul>li:hover>ul {
     display: block;
     transition: all 0.3s linear;
 
 }
 
-.newMenu2:hover .content2>ul {
+.headerLinks>ul>li>ul>li:hover>ul {
     display: block;
     transition: all 0.3s linear;
 
