@@ -51,12 +51,12 @@
     cursor: pointer;
     position: relative;
     list-style-type: none;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .headerLinks>ul>li a {
 
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
     color: black;
     padding: 0 5px 20px 5px;
@@ -85,6 +85,10 @@
     padding: 10px 0;
     display: none;
 
+}
+
+.headerLinks>ul>li>ul>li {
+    margin-bottom: 10px;
 }
 
 .headerLinks>ul>li>ul>li>ul {
