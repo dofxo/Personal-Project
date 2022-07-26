@@ -59,7 +59,6 @@
     font-size: 13px;
     text-decoration: none;
     color: black;
-    padding: 0 5px 20px 5px;
 
 }
 
@@ -75,7 +74,7 @@
     margin-left: 10px;
 }
 
-
+/* level 2 */
 .headerLinks>ul>li>ul {
     position: absolute;
     top: 150%;
@@ -83,22 +82,37 @@
     background-color: #Fff;
     width: 200px;
     padding: 10px 0;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 20px -10px;
+    transition: all 0.1s linear;
+    transition-delay: 0.1s;
+    display: block;
 
 }
 
+<<<<<<< Updated upstream
 .headerLinks>ul>li>ul>li {
     margin-bottom: 5px;
 }
 
+=======
+/* level 3*/
+>>>>>>> Stashed changes
 .headerLinks>ul>li>ul>li>ul {
     position: absolute;
     top: 50%;
-    right: 100%;
+    right: 112.5%;
     width: 200px;
     padding: 10px 0;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     background-color: #fff;
+    box-shadow: 0 0 20px -10px;
+    transition: all 0.1s linear;
+    transition-delay: 0.1s;
+    display: block;
+
 
 
 
@@ -133,7 +147,8 @@
 
 .headerLinks>ul>li:hover>ul,
 .headerLinks>ul>li>ul>li:hover>ul {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 
 
 }
@@ -189,11 +204,12 @@
     margin-top: 20px;
     background: linear-gradient(to right, #6271f8, #59b9fd);
     padding: 15px 35px;
+    transition: all 0.3s linear;
 }
 
 #discoverNow:hover {
     box-shadow: 0 10px 20px #9693938c;
-    transition: all 0.3s linear;
+  
 }
 
 /* Main row 2 */
@@ -246,11 +262,12 @@
     margin-top: 20px;
     background: linear-gradient(to right, #6271f8, #59b9fd);
     padding: 15px 35px;
+    transition: all 0.3s linear;
 }
 
 #viewDetails:hover {
     box-shadow: 0 10px 20px #9693938c;
-    transition: all 0.3s linear;
+  
 }
 
 /* main row 3 */
@@ -456,7 +473,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-
+    transition: all 0.4s linear;
 }
 
 .galleryItem .image .cover i {
@@ -467,7 +484,7 @@
 .galleryItem:hover .image .cover {
 
     opacity: 1;
-    transition: all 0.4s linear;
+   
 
 
 }
@@ -545,7 +562,13 @@
     cursor: pointer;
     padding: 20px 40px;
     background-color: white;
+    transition: all 0.4s linear;    
 
+}
+.planItem:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #818dfa, #6fc2fd);
+    
 }
 
 .planItem #planNumberSection {
@@ -628,11 +651,6 @@
 
 }
 
-.planItem:hover {
-    transform: scale(1.1);
-    transition: all 0.4s linear;
-    background: linear-gradient(to right, #818dfa, #6fc2fd);
-}
 
 .planItem:hover #planTitle {
     color: white;
@@ -669,9 +687,6 @@
     align-items: center;
     width: 100%;
     height: fit-content;
-
-
-
 }
 
 #latestPosts #latestPostsTitle {
@@ -711,12 +726,11 @@
 
 #postImage {
     cursor: pointer;
-
+    transition: all 0.4s linear;
 }
 
 #latestPostsItems .posts:nth-of-type(1) #postImage {
     background: url(images/postImage.jpg);
-
     height: 200px;
     background-size: 100%;
     background-position: center;
@@ -725,7 +739,6 @@
 
 #latestPostsItems .posts:nth-of-type(2) #postImage {
     background: url(images/postImage2.jpg);
-
     height: 200px;
     background-size: 100%;
     background-position: center;
@@ -734,7 +747,6 @@
 
 #latestPostsItems .posts:nth-of-type(3) #postImage {
     background: url(images/postImage3.jpg);
-
     height: 200px;
     background-size: 100%;
     background-position: center;
@@ -794,7 +806,6 @@
 
 #latestPostsItems .posts:hover #postImage {
     background-size: 110%;
-    transition: all 0.4s linear;
 }
 
 #latestPostsItems .posts:hover #postTitle {
