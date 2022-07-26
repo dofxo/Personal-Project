@@ -59,6 +59,7 @@
     font-size: 13px;
     text-decoration: none;
     color: black;
+    padding: 0 10px;
 
 }
 
@@ -102,7 +103,7 @@
 .headerLinks>ul>li>ul>li>ul {
     position: absolute;
     top: 50%;
-    right: 112.5%;
+    right: 105.5%;
     width: 200px;
     padding: 10px 0;
     visibility: hidden;
