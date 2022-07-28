@@ -78,7 +78,7 @@
 /* level 2 */
 .headerLinks>ul>li>ul {
     position: absolute;
-    top: 150%;
+    top: 180%;
     right: 0;
     background-color: #Fff;
     width: 200px;
@@ -210,7 +210,7 @@
 
 #discoverNow:hover {
     box-shadow: 0 10px 20px #9693938c;
-  
+
 }
 
 /* Main row 2 */
@@ -268,7 +268,7 @@
 
 #viewDetails:hover {
     box-shadow: 0 10px 20px #9693938c;
-  
+
 }
 
 /* main row 3 */
@@ -485,7 +485,7 @@
 .galleryItem:hover .image .cover {
 
     opacity: 1;
-   
+
 
 
 }
@@ -563,13 +563,14 @@
     cursor: pointer;
     padding: 20px 40px;
     background-color: white;
-    transition: all 0.4s linear;    
+    transition: all 0.4s linear;
 
 }
+
 .planItem:hover {
     transform: scale(1.1);
     background: linear-gradient(to right, #818dfa, #6fc2fd);
-    
+
 }
 
 .planItem #planNumberSection {
